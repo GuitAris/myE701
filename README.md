@@ -87,17 +87,56 @@ Mit Forks kann man ein Git Repository forken, somit "kopiert" man ein Repository
 Ich konnte meine Ziele erreichen und habe nun eine bessere Vorstellung von Git. 
 ***
 
-### 701.4 Continuous Integration and Continuous Delivery
+### 702.1 Container Usage
 
-**Weight:** 5
+**Weight:** 7 (Für Schüler die das Modul 300 nicht besucht haben, +7 Bonuspunkte)
 
 **Beschreibung**
+Kandidat kann eine Docker Umgebung aufbauen, betreiben und teilen. Dazu gehört das Erstellen von Dockerfiles und weiteres. 
  
 
 **Tagesziele**
-
-
+* Dockerfunktionen dokumentieren
+* eigenes Dockerfile erstellen
+* Dockercontainer erstellen
+* Bedienung und Zugriff auf Docker-Container 
 
 **Vorgehen**  
+Ich erstelle ein eigenes Dockerfile. Mit diesem Dockerfile wird automatisch ein MySQL Container erstellt und gestartet. 
 
 **Beispiele und Arbeitsergebnisse**
+###Was ist Docker?
+Mit Docker kann man vereinfacht Container bereitstellen und installieren. 
+
+
+#### Docker Befehle
+
+| Command | Bedeutung |
+| ---- | ---- |
+| docker build "Source" | Erstellt ein Docker image | 
+| docker images | Zeigt alle verfügbare Docker images |
+| docker rmi "image" | Löscht ein Docker image |
+| docker run "image" | startet ein Docker image |
+| docker exec -it "Container" \bin\bash | Exploriert einen Container |
+
+### Dockerfile
+Folgend ist der Inhalt des Dockerfiles.
+
+    FROM ubuntu:14.04
+
+    # root Password setzen
+    RUN echo 'mysql-server mysql-server/root_password password Server.22' | debconf-set-selections 
+    RUN echo 'mysql-server mysql-server/root_password_again password Server.22' | debconf-set-selections 
+
+    # Installation
+    RUN apt-get update && apt-get install -y mysql-server
+
+    # mysql config
+    RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+
+    EXPOSE 3306
+
+    VOLUME /var/lib/mysql
+
+    CMD ["mysqld"]
+

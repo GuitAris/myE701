@@ -89,7 +89,8 @@ Ich konnte meine Ziele erreichen und habe nun eine bessere Vorstellung von Git.
 
 ### 702.1 Container Usage
 
-**Weight:** 7 (Für Schüler die das Modul 300 nicht besucht haben, +7 Bonuspunkte)
+**Weight:** 
+7 (Für Schüler die das Modul 300 nicht besucht haben, +7 Bonuspunkte)
 
 **Beschreibung**
 Kandidat kann eine Docker Umgebung aufbauen, betreiben und teilen. Dazu gehört das Erstellen von Dockerfiles und weiteres. 
@@ -105,11 +106,10 @@ Kandidat kann eine Docker Umgebung aufbauen, betreiben und teilen. Dazu gehört 
 Ich erstelle ein eigenes Dockerfile. Mit diesem Dockerfile wird automatisch ein MySQL Container erstellt und gestartet. 
 
 **Beispiele und Arbeitsergebnisse**
-###Was ist Docker?
+*Was ist Docker?*
 Mit Docker kann man vereinfacht Container bereitstellen und installieren. 
 
-
-#### Docker Befehle
+*Docker Befehle*
 
 | Command | Bedeutung |
 | ---- | ---- |
@@ -119,7 +119,7 @@ Mit Docker kann man vereinfacht Container bereitstellen und installieren.
 | docker run "image" | startet ein Docker image |
 | docker exec -it "Container" \bin\bash | Exploriert einen Container |
 
-### Dockerfile
+*Dockerfile*
 Folgend ist der Inhalt des Dockerfiles.
 
     FROM ubuntu:14.04
@@ -139,4 +139,33 @@ Folgend ist der Inhalt des Dockerfiles.
     VOLUME /var/lib/mysql
 
     CMD ["mysqld"]
+***
 
+### 702.2 Container Deployment and Orchestration
+
+**Weight:**
+5
+
+**Beschreibung**
+Der Kandidat ist in der Lage, Kubernetes einzurichten und Docker Compose einzusetzen.  
+ 
+
+**Tagesziele**
+* Kubernetes umgebung einrichten
+* Weave einrichten
+* Docker Compose verstehen
+
+**Vorgehen**  
+Ich werde die Lernumgebung starten un Kuberentes genau anschaun. Ausserdem installiere ich noch Weave. 
+
+**Beispiele und Arbeitsergebnisse**
+gitclonehttps://github.com/mc-b/lernkube
+cd lernkube
+gitclonehttps://github.com/mc-b/iot.kafka# nur für die IoTBeispiele
+cptemplates/MISEGR.yamlconfig.yaml
+#evtl.Memory in config.yamlreduzieren (Standard = 10 GB RAM)
+vagrantplugininstallvagrant-disksize
+vagrantup
+# Warten bis Installiert und Ausgabe Token, Cluster erfolgt
+source kubeenv# setzt Umgebungsvariablen
+kubectl.... (wie auf Folien beschrieben)Folie: 16

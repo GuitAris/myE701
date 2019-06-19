@@ -23,11 +23,17 @@ Kapitel aus E701 wurden in der Gruppe mit .... erarbeitet. Davon sind mindestens
 
 **Weight**: 7 (7)
 
-**Beschreibung** Gegenüberstellung welche Linux Technologien für Container verwendet werden.
+**Beschreibung** 
 
-**Tagesziele**, z.B. Erstellung einer Tabelle Linux - Container. 
+Gegenüberstellung welche Linux Technologien für Container verwendet werden.
 
-**Vorgehen**, z.B. Studieren Background Linux Namespaces vs. Container, UnionFS vs. Container Layer, Unix Prozesse (Jobs) vs. Docker run/start/stop
+**Tagesziele**
+
+z.B. Erstellung einer Tabelle Linux - Container. 
+
+**Vorgehen**
+
+z.B. Studieren Background Linux Namespaces vs. Container, UnionFS vs. Container Layer, Unix Prozesse (Jobs) vs. Docker run/start/stop
 
 **Beispiele und Arbeitsergebnisse**
 
@@ -37,7 +43,9 @@ Kapitel aus E701 wurden in der Gruppe mit .... erarbeitet. Davon sind mindestens
 | UnionFS       | Image Layer         | Container Verwenden UnionFileSysteme um ....                               |
 | Unix Prozesse | run/start/stop      | docker run/start/stop Befehle ähneln dem .... Subsystem                    |
 
-**Fazit und Aussicht**, z.B. Die Durcharbeitung von ... gab mir ein besseres Verständnis über die Funktionsweise von Containern.
+**Fazit und Aussicht**
+
+z.B. Die Durcharbeitung von ... gab mir ein besseres Verständnis über die Funktionsweise von Containern.
 
 ## Links
 
@@ -51,23 +59,29 @@ Kapitel aus E701 wurden in der Gruppe mit .... erarbeitet. Davon sind mindestens
 **Weight:** 5
 
 **Beschreibung** 
+
 Kandidaten sollten in der Lage sein, Git zur Verwaltung und Freigabe von Quellcode zu verwenden. Dazu gehören das Erstellen und Beitragen zu einem Repository sowie die Verwendung von Tags, Zweigen und Remote-Repositories. Darüber hinaus sollte der Kandidat in der Lage sein, Dateien zusammenzuführen und Konflikte zu lösen.
 
 **Tagesziele**
+
 * Das Konzept von Git und Repository verstehen
 * Dateien in einem Git-Repository verwalten können
 * Branches, Tags und Forks verwalten können und verstehen
  
 
 
-**Vorgehen** Mit Hilfe von den verlinkten Seiten, welche von Herrn Bernet bereitgestellt worden sind und indem ich selber mit Git arbeite. Ich erstelle einen eigenen Repo und lerne so auch gleich das Verwalten von einem Repo. Damit ich Branches, Tags und Forks verstehen und verwalten kann, schaue ich mir die unterschiedlichen Links an und informiere mich im Internet.  
+**Vorgehen** 
+
+Mit Hilfe von den verlinkten Seiten, welche von Herrn Bernet bereitgestellt worden sind und indem ich selber mit Git arbeite. Ich erstelle einen eigenen Repo und lerne so auch gleich das Verwalten von einem Repo. Damit ich Branches, Tags und Forks verstehen und verwalten kann, schaue ich mir die unterschiedlichen Links an und informiere mich im Internet.  
 
 **Beispiele und Arbeitsergebnisse**
+
 Ich schreibe meine Dokumentation in Github. Als Editor verwende ich Visual Studio Code.
 
 ![Github in Visual Studio Code ](/images/visual_studio_code_github.png)
 
-*Branch*
+**Branch**
+
 Ein Branch ist ein isolierter Bereich, bei dem beispielsweise Porgramme oder Scripts entwickelt werden. Durch die Isolation beinträchtigt ein selber erstellen Branch den "master" nicht. 
 
 | Commands     | Beschreibung                                                                                                                                                                                |
@@ -75,38 +89,48 @@ Ein Branch ist ein isolierter Bereich, bei dem beispielsweise Porgramme oder Scr
 | git branch   | Mit diesem Befehl können neue Branches erstellt werden (z.B. git branch Test123) oder alle Branches aufgelistet werden                                                                      |
 | git commit   | Wird das Gespeicherte bestätigt                                                                                                                                                             |
 | git checkout | Mit diesem Befehl wechselt man unter den verschiedenen Branches (z.B git checkout Test123). Auch können mittels Paramater z.B. -b einen neuen Branch erstellt und gleich gewechselt werden. |
-| git clone    | Mit diese Befehl klont man ein Repository aus einem Git.                                                                                                                                    |
-*Tags*
+| git clone    | Mit diese Befehl klont man ein Repository aus einem Git. |
+
+**Tags**
+
 Tags sind Referenzen für eine Version einer Git-Datei. So kann man beliebig auf eine Version wechseln oder diese ansehen. 
 
-*Forks*
+**Forks**
+
 Mit Forks kann man ein Git Repository forken, somit "kopiert" man ein Repository zu seinem eigenen Git.
 
 
 **Fazit und Aussicht**
+
 Ich konnte meine Ziele erreichen und habe nun eine bessere Vorstellung von Git. 
 ***
 
 ### 702.1 Container Usage
 
-**Weight:** 
+**Weight:**
+
 7 (Für Schüler die das Modul 300 nicht besucht haben, +7 Bonuspunkte)
 
 **Beschreibung**
+
 Kandidat kann eine Docker Umgebung aufbauen, betreiben und teilen. Dazu gehört das Erstellen von Dockerfiles und weiteres. 
  
 
 **Tagesziele**
+
 * Dockerfunktionen dokumentieren
 * eigenes Dockerfile erstellen
 * Dockercontainer erstellen
 * Bedienung und Zugriff auf Docker-Container 
 
 **Vorgehen**  
+
 Ich erstelle ein eigenes Dockerfile. Mit diesem Dockerfile wird automatisch ein MySQL Container erstellt und gestartet. 
 
 **Beispiele und Arbeitsergebnisse**
+
 *Was ist Docker?*
+
 Mit Docker kann man vereinfacht Container bereitstellen und installieren. 
 
 *Docker Befehle*
@@ -120,6 +144,7 @@ Mit Docker kann man vereinfacht Container bereitstellen und installieren.
 | docker exec -it "Container" \bin\bash | Exploriert einen Container |
 
 *Dockerfile*
+
 Folgend ist der Inhalt des Dockerfiles.
 
     FROM ubuntu:14.04
@@ -144,18 +169,20 @@ Folgend ist der Inhalt des Dockerfiles.
 ### 702.2 Container Deployment and Orchestration
 
 **Weight:**
+
 5
 
 **Beschreibung**
 Der Kandidat ist in der Lage, Kubernetes einzurichten und Docker Compose einzusetzen.  
- 
 
 **Tagesziele**
+
 * Kubernetes umgebung einrichten
 * Weave einrichten
 * Docker Compose verstehen
 
 **Vorgehen**  
+
 Ich werde die Lernumgebung starten un Kuberentes genau anschaun. Ausserdem installiere ich noch Weave. 
 
 **Beispiele und Arbeitsergebnisse**
@@ -176,12 +203,16 @@ Ich werde die Lernumgebung starten un Kuberentes genau anschaun. Ausserdem insta
 
 ### 704.1 Configuration Management
 
-**Weight:** 8
+**Weight:** 
+
+8
 
 **Beschreibung** 
+
 Der Kandidat soll in der Lage sein Ansible verwenden und konfigurationen durchführen können. 
 
 **Tagesziele**
+
 * ansible.cfg verstehen
 * ansible-playbook verstehen
 * ansible-vault verstehen
@@ -257,4 +288,4 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 **Arbeitsergebnisse**
 Die Files der Arbeiten können hier angeschaut werden:
 
-![ Ansible Dokumente ] (ansible)
+![Ansible Dokumente](ansible)

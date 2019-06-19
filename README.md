@@ -221,6 +221,7 @@ Zum Ansible mit einem Playbook auszuführen, kann man beispielsweise folgenden B
 **Ansible-vault**
 
 Ansible-Vault ist ein Tool, dass es ermöglicht Files zu verschlüsseln. So stehen beispielweise Benutzername und Passwörter nicht im Klartext.
+
 ![ Ansible Vault ](/images/ansible_vault_encrypted.png)
   
 In diesem Beispiel wären der Benutzername und das Passwort vom Remote-Server klar ersichtlich.
@@ -254,5 +255,6 @@ Dieser Ordner muss man noch erstellen und normalerweise werde dort auch die Anme
 Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm verwendet. Der ganze Aufbau ist auch sehr ähnlich, wie bei Linux-Systemen. Auf dem Windows-Server müssen nur wenige PowerShell Scripts und PowerShell-Befehle ausgeführt werden, damit die Ports 5985 für http und 5986 für HTTPS. WinRM ist ein SOAP(Simple Object Access Protocol) Netzwerkprotokoll. Die ganze Anleitung für die Konfiguration unter Windows findet man hier: https://docs.ansible.com/ansible/latest/user_guide/windows_winrm.html
 
 **Arbeitsergebnisse**
-Die Files der Arbeiten können hier angeschaut werden: 
-![ Ansible Dokumente] (ansible)
+Die Files der Arbeiten können hier angeschaut werden:
+
+![ Ansible Dokumente ] (ansible)

@@ -265,7 +265,7 @@ Um ein File mit Ansible-Vault zu entschlüsseln kann man beispielsweise folgende
 
 **Ansible-galaxy**
 
-bääääääh
+Ansible Galaxy ist eine Communityseite für Ansible, wo sich die einzelnen Ansible-Benuzter ihre Projekte teilen und darüber diskutieren können. Die Seite fidnet man unter folgendem Link: https://galaxy.ansible.com/
 
 **Ansible-doc**
 
@@ -289,3 +289,4 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 Die Files der Arbeiten können hier angeschaut werden:
 
 ![Ansible Dokumente](ansible)
+***

@@ -1,0 +1,5 @@
+- name: Run Powershell Scripts
+  hosts: windows
+  tasks:
+    - name: run a powershell script
+      win_command: powershell.exe -ExecutionPolicy ByPass -File C:/Users/Administrator/Documents/simple_ps.ps1

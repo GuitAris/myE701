@@ -91,6 +91,7 @@ Ein Branch ist ein isolierter Bereich, bei dem beispielsweise Porgramme oder Scr
 | git checkout | Mit diesem Befehl wechselt man unter den verschiedenen Branches (z.B git checkout Test123). Auch können mittels Paramater z.B. -b einen neuen Branch erstellt und gleich gewechselt werden. |
 | git clone    | Mit diese Befehl klont man ein Repository aus einem Git. |
 
+
 **Tags**
 
 Tags sind Referenzen für eine Version einer Git-Datei. So kann man beliebig auf eine Version wechseln oder diese ansehen. 

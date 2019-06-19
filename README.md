@@ -292,3 +292,107 @@ Die Files der Arbeiten können hier angeschaut werden:
 
 ![Ansible Dokumente](ansible)
 ***
+
+### 703.1 Virtual machine deployment
+
+**Weight:** 
+
+4
+
+**Beschreibung** 
+
+Der Kandidat kennt die Grundlagen von Vagrant und kann auch mit Vagrant VMs erstellen.  
+
+**Tagesziele**
+
+* Vagrant
+* Vagrantfile
+* mit Vagrant VM einrichten
+* Vagrant verstehen
+
+
+**Vorgehen**  
+
+Ich werde mit einem eigenen Vagrantfile eigen virtuelle Maschine erstellen und somit das Erstellen von VMs automatisieren. 
+
+**Beispiele und Arbeitsergebnisse**
+
+ **Vagrant**
+
+Mit Vagrant können schnell, einfach und unkompliziert virtuelle Maschine erstellt werden. 
+Vagrant kann für unterschiedliche Betriebssysteme, unter folgendem Link heruntergeladen werden.
+https://www.vagrantup.com/downloads.html
+
+
+
+
+**Vm mit Vagrant auf einem Notebook aufsetzen**
+
+Eine Vagrant-Box aus der Vagrant-Cloud zu holen und eine VM zu ersellen ist mit zwei Zeilen Befehl möglich. 
+```
+    vagrant init centos/7
+    vagrant up
+```
+
+![Cent OS mit Vagrant](/images/vagrant_init_centos.png)
+
+Möchte man alle Boxen auflisten kann man das mit folgendem Befehl machen. 
+```
+    $ vagrant box list
+    Microsoft/EdgeOnWindows10 (virtualbox, 1.0)
+    centos/7                  (virtualbox, 1902.01)
+    ubuntu/trusty64           (virtualbox, 20190429.0.1)
+    ubuntu/xenial64           (virtualbox, 20190511.0.0)
+```
+**Kennt die Vagrant-Befehle**
+
+| Befehl           | Beschreibung                         |
+|------------------|--------------------------------------|
+| vagrant box add  | Eine Vagrant-Box wird hinzugefügt    |
+| vagrant box list | Listet alle Vagrant-Boxen auf        |
+| vagrant up       | Erstellt eine VM mit dem Vagrantfile |
+| vagrant ssh      | Verbindet sich mit ssh auf die VM    |
+| vagrant init     | Erstellt ein Vagrantfile             |
+
+**Vagrantfile**
+
+    Vagrant.configure(2) do |config|
+
+    config.vm.define "webserver" do |web|
+        web.vm.box = "ubuntu/xenial64"
+        web.vm.hostname = "webserver"
+        web.vm.network "private_network", ip: "10.0.0.10"
+        web.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+        web.vm.provider "virtualbox" do |vb|
+            vb.memory = "1024"
+            vb.name = "webserver"
+        end
+        web.vm.synced_folder ".", "/var/www/html/Fileshare"
+        web.vm.provision "shell", path: "webserver.sh"
+    end
+    
+    config.vm.define "client01" do |client01|
+        client01.vm.box = "ubuntu/xenial64"
+        client01.vm.hostname = "client-int"
+        client01.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
+        client01.vm.network "private_network", ip: "10.0.0.20"
+        client01.vm.provider "virtualbox" do |vb|
+            vb.memory = "1024"
+            vb.name = "client-int"
+        end
+        client01.vm.synced_folder ".", "/var/www/html/Fileshare"
+        client01.vm.provision "shell", path: "client-int.sh"
+    end
+    
+    config.vm.define "client02" do |client02|
+        client02.vm.box = "ubuntu/xenial64"
+        client02.vm.hostname = "client-ext"
+        client02.vm.network "private_network", ip: "80.0.0.20"
+        client02.vm.provider "virtualbox" do |vb|
+            vb.memory = "1024"
+            vb.name = "client-ext"
+        end
+        client02.vm.synced_folder ".", "/var/www/html/Fileshare"
+        client02.vm.provision "shell", path: "client-ext.sh"
+    end
+    end

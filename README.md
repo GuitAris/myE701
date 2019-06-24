@@ -14,44 +14,37 @@
 | 03.07.19 | Sommersporttage                                                                                                                                                | -          |
 |          | Total Punkte                                                                                                                                                   | 27 (34) !  |
 
-Kapitel aus E701 wurden in der Gruppe mit .... erarbeitet. Davon sind mindestens 14 Punkte selbständig erarbeitet worden. 
+Die folgenden Arbeiten wurden in der Gruppe mit Kevin Frunz erarbeitet. Beide haben aber die Arbeiten jeweils auf ihren Notebook erstellt. 
 
 ## Dokumention des Lern- und Entwicklungsprozesses
 ***
 
-### Kapitel: 701.1 Container Usage (Status: In Arbeit)
+### Kapitel: 701.1 Modern Software Development
 
-**Weight**: 7 (7)
+**Weight**
+
+6
 
 **Beschreibung** 
 
-Gegenüberstellung welche Linux Technologien für Container verwendet werden.
+Ausweisung, wie man eine Containerumgebung einrichet. Die Begriffe Performenz, Erreichbarkeit, Loadbalancing, Security und etc. werden nach diesem Topic bekannt sein. 
 
 **Tagesziele**
 
-z.B. Erstellung einer Tabelle Linux - Container. 
+* Verstehen, wie ein Containerumgebung funktioniert
+* Begrifflichkeiten verstehen (Performenz, Erreichbarkeit, Loadbalancing, Security)
+* Mikroprozesse erstellen
+
 
 **Vorgehen**
 
-z.B. Studieren Background Linux Namespaces vs. Container, UnionFS vs. Container Layer, Unix Prozesse (Jobs) vs. Docker run/start/stop
+In den Unterlagen schaue ich das Video, welches Mikroprozesse erklärt. Dazu haben wir in diesem Kapitel Mikroprozesse beschrieben und werden selber einen erstellen. 
 
 **Beispiele und Arbeitsergebnisse**
 
-| Linux         | Container           | Beschreibung                                                               |
-| ------------- | ------------------- | -------------------------------------------------------------------------- |
-| Namespaces    | laufender Container | beim Starten des Containers wird in eine andere Linux Namespace gewechselt |
-| UnionFS       | Image Layer         | Container Verwenden UnionFileSysteme um ....                               |
-| Unix Prozesse | run/start/stop      | docker run/start/stop Befehle ähneln dem .... Subsystem                    |
+**Was ist ein Mikroprozess?**
 
-**Fazit und Aussicht**
-
-z.B. Die Durcharbeitung von ... gab mir ein besseres Verständnis über die Funktionsweise von Containern.
-
-## Links
-
-* [Exam 701: DevOps Tools Engineer](https://www.lpi.org/our-certifications/exam-701-objectives) 
-* [E701 Dokumentation](https://github.com/w901-fr19-mi/E701)
-* [myE701 Original Repository](https://github.com/w901-fr19-mi/myE701) 
+Ein Mikroprozess ist ein einzelner Prozess eines grossen Ganzen. Mikroprozese ändern das Vorgehen, wie Programme geschrieben werden. Mit Mikroprozesse braucht es nicht mehr ein grosses Porgramm, dass alles kann, sondern man teilt dieses grosse Programm in einzelnen kleinen Dienste. Somit kann man eine bessere Belastung und eine höhre Erreichbarkeit erzielen. 
 ***
 
 ### 701.3 Source Code Management
@@ -105,6 +98,12 @@ Mit Forks kann man ein Git Repository forken, somit "kopiert" man ein Repository
 **Fazit und Aussicht**
 
 Ich konnte meine Ziele erreichen und habe nun eine bessere Vorstellung von Git. 
+
+**Dokumentationen**
+* [Git scm Basic Branches](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) 
+* [Git Buch](https://git-scm.com/book/de/v2)
+* [myE701 Original Repository](https://github.com/w901-fr19-mi/myE701)
+
 ***
 
 ### 702.1 Container Usage
@@ -291,6 +290,7 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 Die Files der Arbeiten können hier angeschaut werden:
 
 ![Ansible Dokumente](ansible)
+ 
 ***
 
 ### 703.1 Virtual machine deployment

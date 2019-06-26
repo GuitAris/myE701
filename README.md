@@ -45,6 +45,24 @@ In den Unterlagen schaue ich das Video, welches Mikroprozesse erklärt. Dazu hab
 **Was ist ein Mikroprozess?**
 
 Ein Mikroprozess ist ein einzelner Prozess eines grossen Ganzen. Mikroprozese ändern das Vorgehen, wie Programme geschrieben werden. Mit Mikroprozesse braucht es nicht mehr ein grosses Porgramm, dass alles kann, sondern man teilt dieses grosse Programm in einzelnen kleinen Dienste. Somit kann man eine bessere Belastung und eine höhre Erreichbarkeit erzielen. 
+
+**Beispiel eines Mikroprezess**
+Folgend zeige ich einen einfachen Mikroprozess. Damti dieser ausgeführt werde kann muss noch Node Js installiert werden. 
+
+    var http = require("http");
+    http.createServer(function (request, response) {
+    // Send the HTTP header 
+    // HTTP Status: 200 : OK
+    // Content Type: text/plain
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    
+    // Send the response body as "Hello World"
+    response.end('Hello World\n');
+    }).listen(8081);
+
+    // Console will print the message
+    console.log('Server running at http://127.0.0.1:8081/');
+
 ***
 
 ### 701.3 Source Code Management
@@ -289,7 +307,7 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 **Arbeitsergebnisse**
 Die Files der Arbeiten können hier angeschaut werden:
 
-![Ansible Dokumente](ansible)
+![Ansible Dokumente](ansible.png)
  
 ***
 

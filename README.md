@@ -307,7 +307,7 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 **Arbeitsergebnisse**
 Die Files der Arbeiten können hier angeschaut werden:
 
-![Ansible Dokumente](/images/ansible_01.png)
+![Ansible Dokumente](/ansible)
  
 ***
 

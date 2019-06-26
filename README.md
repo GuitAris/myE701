@@ -2,17 +2,17 @@
 ***
 
 
-| Datum    | behandelte Unterrichtsinhalte:                                                                                                                                 | Gewichtung |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| 15.05.19 | Installation SW, Einrichten Linux VM(s)<br>[701.1 Modern Software Development, 1. Teil](https://github.com/w901-fr19-mi/E701#7011-modern-software-development) | 6          |
-| 22.05.19 | [701.3 Source Code Management](https://github.com/w901-fr19-mi/E701#7013-source-code-management)                                                               | 5          |
-| 29.05.19 | Planung nächste Mal                                                                                                                                            |            |
-| 05.06.19 | 702.1 Container Usage, 1. Teil                                                                                                                                 | 7          |
-| 12.06.19 | 702.1 Container Usage, 2. Teil                                                                                                                                 | (7)        |
-| 19.06.19 | 702.2 Container Deployment and Orchestration                                                                                                                   | 5          |
-| 26.06.19 | LB1 Theoretische Prüfung und Abschluss LB2                                                                                                                     | -          |
-| 03.07.19 | Sommersporttage                                                                                                                                                | -          |
-|          | Total Punkte                                                                                                                                                   | 27 (34) !  |
+| Datum | behandelte Unterrichtsinhalte: | Gewichtung |
+| -------- | ------ | -------- |
+| 15.05.19 | 701.1 Modern Software Development | 6 + 4|
+| 22.05.19 | 701.3 Source Code Management | 5 |
+| 29.05.19 | 702.1 Container Usage | 7 + 7 | 
+| 05.06.19 | 702.2 Container Deployment and Orchestration | 5 |
+| 12.06.19 | 703.1 Virtual Machine Deployment | 4 |
+| 19.06.19 | 704.1 Ansible | 8 |
+| 26.06.19 | LB1 Theoretische Prüfung und Abschluss LB2 | - |
+| 03.07.19 | Sommersporttage | - |
+|          | Total Punkte | 46 ! |
 
 Die folgenden Arbeiten wurden in der Gruppe mit Kevin Frunz erarbeitet. Beide haben aber die Arbeiten jeweils auf ihren Notebook erstellt. 
 

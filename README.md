@@ -151,6 +151,8 @@ Ich erstelle ein eigenes Dockerfile. Mit diesem Dockerfile wird automatisch ein 
 *Was ist Docker?*
 
 Mit Docker kann man vereinfacht Container bereitstellen und installieren. 
+![ Aufbau von Docker ](/images/docker.jpeg)
+
 
 *Docker Befehle*
 

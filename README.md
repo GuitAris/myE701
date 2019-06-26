@@ -294,7 +294,7 @@ Zeigt Informationen zu Modulen an, die in Ansible-Bibliotheken installiert sind.
 
 In ansible gibt es im Verzeichnis */etc/ansible* eine File namens hosts. Dort kann man viele IP-Adressen zu einer bestimmten Gruppe auflisten, damit beim Ausführen eines Befehls, die ganze Gruppe den Befehl ausführt. Man könnte dort auch die Benutzername und das Passwort des Remote-Servers angeben, wäre aber nicht so praktisch, weil es dafür eine bessere Lösung gibt. 
 
-[ Ansible Hosts ](/images/ansible_hosts.png)
+![ Ansible Hosts ](/images/ansible_hosts.png)
  
 **Group_vars**
 
@@ -307,7 +307,7 @@ Ansible kann man auch für Windows benutzen. Dafür wird das Protokoll winrm ver
 **Arbeitsergebnisse**
 Die Files der Arbeiten können hier angeschaut werden:
 
-![ Ansible Dokumente ](https://github.com/GuitAris/myE701/tree/master/ansible)
+[ Ansible Dokumente ](https://github.com/GuitAris/myE701/tree/master/ansible)
  
 ***
 

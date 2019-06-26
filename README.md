@@ -65,6 +65,8 @@ Folgend zeige ich einen einfachen Mikroprozess. Damti dieser ausgeführt werde k
 
 ***
 
+![Microservice ](/images/microservice.jpeg)
+
 ### 701.3 Source Code Management
 
 **Weight:** 5
@@ -148,13 +150,13 @@ Ich erstelle ein eigenes Dockerfile. Mit diesem Dockerfile wird automatisch ein 
 
 **Beispiele und Arbeitsergebnisse**
 
-*Was ist Docker?*
+**Was ist Docker?**
 
 Mit Docker kann man vereinfacht Container bereitstellen und installieren. 
 ![ Aufbau von Docker ](/images/docker.jpeg)
 
 
-*Docker Befehle*
+**Docker Befehle**
 
 | Command | Bedeutung |
 | ---- | ---- |
@@ -164,7 +166,7 @@ Mit Docker kann man vereinfacht Container bereitstellen und installieren.
 | docker run "image" | startet ein Docker image |
 | docker exec -it "Container" \bin\bash | Exploriert einen Container |
 
-*Dockerfile*
+**Dockerfile**
 
 Folgend ist der Inhalt des Dockerfiles.
 
